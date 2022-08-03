@@ -7,3 +7,13 @@ __all__ = ['say_hello']
 def say_hello(to):
     "test function to say hello"
     return f'hello {to}!'
+
+# %% ../00_core.ipynb 5
+from IPython.display import display,SVG
+import numpy as np
+import matplotlib.cm as cm
+import matplotlib.pyplot as plt
+import matplotlib.cbook as cbook
+from matplotlib.path import Path
+from matplotlib.patches import PathPatch
+from nbdev.test import *
