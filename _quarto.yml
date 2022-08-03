@@ -15,7 +15,7 @@ format:
     toc-depth: 4
 
 website:
-  title: "futurama-frames-detection"
+  title: "futurama_frames_detection"
   description: "Solution for the mediavida challenge 2"
   execute: 
     enabled: false
