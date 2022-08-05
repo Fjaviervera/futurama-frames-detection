@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Classes and Functions">
+
+<title>futurama_frames_detection - Documentation</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="futurama_frames_detection - Documentation">
+<meta property="og:description" content="Classes and Functions">
+<meta property="og:site-name" content="futurama_frames_detection">
+<meta name="twitter:title" content="futurama_frames_detection - Documentation">
+<meta name="twitter:description" content="Classes and Functions">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">futurama_frames_detection</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Javier Vera/futurama-frames-detection/"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Documentation</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./core.html" class="sidebar-item-text sidebar-link active">Documentation</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_core.html" class="sidebar-item-text sidebar-link">Train and generate a Submission</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#futuramadataset" id="toc-futuramadataset" class="nav-link active" data-scroll-target="#futuramadataset">FuturamaDataset</a>
+  <ul class="collapse">
+  <li><a href="#futuramadataset.__init__" id="toc-futuramadataset.__init__" class="nav-link" data-scroll-target="#futuramadataset.__init__">FuturamaDataset.__init__</a></li>
+  </ul></li>
+  <li><a href="#futuramaresnet" id="toc-futuramaresnet" class="nav-link" data-scroll-target="#futuramaresnet">FuturamaResnet</a>
+  <ul class="collapse">
+  <li><a href="#futuramaresnet.forward" id="toc-futuramaresnet.forward" class="nav-link" data-scroll-target="#futuramaresnet.forward">FuturamaResnet.forward</a></li>
+  <li><a href="#calc_results" id="toc-calc_results" class="nav-link" data-scroll-target="#calc_results">calc_results</a></li>
+  <li><a href="#criterion" id="toc-criterion" class="nav-link" data-scroll-target="#criterion">criterion</a></li>
+  <li><a href="#training" id="toc-training" class="nav-link" data-scroll-target="#training">training</a></li>
+  <li><a href="#create_submission" id="toc-create_submission" class="nav-link" data-scroll-target="#create_submission">create_submission</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Javier Vera/futurama-frames-detection/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Documentation</h1>
+</div>
+
+<div>
+  <div class="description">
+    Classes and Functions
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<!-- WARNING: THIS FILE WAS AUTOGENERATED! DO NOT EDIT! -->
+<hr>
+<section id="futuramadataset" class="level3">
+<h3 class="anchored" data-anchor-id="futuramadataset">FuturamaDataset</h3>
+<blockquote class="blockquote">
+<pre><code> FuturamaDataset (data_path:str, train_images_path:str,
+                  transform:torch.nn.modules.module.Module=None)</code></pre>
+</blockquote>
+<p>Pytorch Dataset to process the images and labels.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Type</strong></th>
+<th><strong>Default</strong></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>data_path</td>
+<td>str</td>
+<td></td>
+<td>path to the train.csv</td>
+</tr>
+<tr class="even">
+<td>train_images_path</td>
+<td>str</td>
+<td></td>
+<td>path to the train images</td>
+</tr>
+<tr class="odd">
+<td>transform</td>
+<td>Module</td>
+<td>None</td>
+<td>transformation</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<section id="futuramadataset.__init__" class="level4">
+<h4 class="anchored" data-anchor-id="futuramadataset.__init__">FuturamaDataset.__init__</h4>
+<blockquote class="blockquote">
+<pre><code> FuturamaDataset.__init__ (data_path:str, train_images_path:str,
+                           transform:torch.nn.modules.module.Module=None)</code></pre>
+</blockquote>
+<p>FuturamaDataset Initialization</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Type</strong></th>
+<th><strong>Default</strong></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>data_path</td>
+<td>str</td>
+<td></td>
+<td>path to the train.csv</td>
+</tr>
+<tr class="even">
+<td>train_images_path</td>
+<td>str</td>
+<td></td>
+<td>path to the train images</td>
+</tr>
+<tr class="odd">
+<td>transform</td>
+<td>Module</td>
+<td>None</td>
+<td>transformation</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="futuramaresnet" class="level3">
+<h3 class="anchored" data-anchor-id="futuramaresnet">FuturamaResnet</h3>
+<blockquote class="blockquote">
+<pre><code> FuturamaResnet (resnet_model, hidden_mlp, drop_out)</code></pre>
+</blockquote>
+<p>A resnet adapted to output 3 classes by 3 mlps.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>resnet_model</td>
+<td>“resnet152” or “resnet34”</td>
+</tr>
+<tr class="even">
+<td>hidden_mlp</td>
+<td>Numbers of neurons for the hidden layer in each class</td>
+</tr>
+<tr class="odd">
+<td>drop_out</td>
+<td>Dropout in the hidden layer</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<section id="futuramaresnet.forward" class="level4">
+<h4 class="anchored" data-anchor-id="futuramaresnet.forward">FuturamaResnet.forward</h4>
+<blockquote class="blockquote">
+<pre><code> FuturamaResnet.forward (x:torch.FloatTensor)</code></pre>
+</blockquote>
+<p>The forward pass of the network.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Type</strong></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>x</td>
+<td>FloatTensor</td>
+<td>input tensor</td>
+</tr>
+<tr class="even">
+<td><strong>Returns</strong></td>
+<td><strong>dict</strong></td>
+<td><strong>output a dict with the logs</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="calc_results" class="level4">
+<h4 class="anchored" data-anchor-id="calc_results">calc_results</h4>
+<blockquote class="blockquote">
+<pre><code> calc_results (outputs:dict, labels:dict)</code></pre>
+</blockquote>
+<p>To calculate the accuracy in validation</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Type</strong></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>outputs</td>
+<td>dict</td>
+<td>predicted classes</td>
+</tr>
+<tr class="even">
+<td>labels</td>
+<td>dict</td>
+<td>labels classes</td>
+</tr>
+<tr class="odd">
+<td><strong>Returns</strong></td>
+<td><strong>FloatTensor</strong></td>
+<td><strong>Accuracy</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="criterion" class="level4">
+<h4 class="anchored" data-anchor-id="criterion">criterion</h4>
+<blockquote class="blockquote">
+<pre><code> criterion (loss_func:torch.nn.modules.loss.CrossEntropyLoss,
+            outputs:dict, pictures:list)</code></pre>
+</blockquote>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Type</strong></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>loss_func</td>
+<td>CrossEntropyLoss</td>
+<td>Loss function to be used</td>
+</tr>
+<tr class="even">
+<td>outputs</td>
+<td>dict</td>
+<td>Predicted probs of the classes</td>
+</tr>
+<tr class="odd">
+<td>pictures</td>
+<td>list</td>
+<td>Labels of the classes</td>
+</tr>
+<tr class="even">
+<td><strong>Returns</strong></td>
+<td><strong>FloatTensor</strong></td>
+<td><strong>Loss</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="training" class="level4">
+<h4 class="anchored" data-anchor-id="training">training</h4>
+<blockquote class="blockquote">
+<pre><code> training (model:torch.nn.modules.module.Module, device:torch.device,
+           writer:torch.utils.tensorboard.writer.SummaryWriter,
+           lr_rate:float, lr_decay:float, epochs:int,
+           train_loader:torch.utils.data.dataloader.DataLoader,
+           val_loader:torch.utils.data.dataloader.DataLoader)</code></pre>
+</blockquote>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Type</strong></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>model</td>
+<td>Module</td>
+<td>Resnet model to be used.</td>
+</tr>
+<tr class="even">
+<td>device</td>
+<td>device</td>
+<td>Device to be used to train.</td>
+</tr>
+<tr class="odd">
+<td>writer</td>
+<td>SummaryWriter</td>
+<td>Writer to Tensorboard, can be None</td>
+</tr>
+<tr class="even">
+<td>lr_rate</td>
+<td>float</td>
+<td>Learning rate</td>
+</tr>
+<tr class="odd">
+<td>lr_decay</td>
+<td>float</td>
+<td>Exponential Decay for the learning rate</td>
+</tr>
+<tr class="even">
+<td>epochs</td>
+<td>int</td>
+<td>Number of epochs to train</td>
+</tr>
+<tr class="odd">
+<td>train_loader</td>
+<td>DataLoader</td>
+<td>Train data loader</td>
+</tr>
+<tr class="even">
+<td>val_loader</td>
+<td>DataLoader</td>
+<td>Validation data loader</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="create_submission" class="level4">
+<h4 class="anchored" data-anchor-id="create_submission">create_submission</h4>
+<blockquote class="blockquote">
+<pre><code> create_submission (model, sample_sub_path, test_img_path, dst_path,
+                    data_mean, data_std, device)</code></pre>
+</blockquote>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>model</td>
+<td>Model trained.</td>
+</tr>
+<tr class="even">
+<td>sample_sub_path</td>
+<td>Path to the sample submission.</td>
+</tr>
+<tr class="odd">
+<td>test_img_path</td>
+<td>Path to the test images.</td>
+</tr>
+<tr class="even">
+<td>dst_path</td>
+<td>Path to store the submission.</td>
+</tr>
+<tr class="odd">
+<td>data_mean</td>
+<td>Data mean for z-score norm.</td>
+</tr>
+<tr class="even">
+<td>data_std</td>
+<td>Data std for z-socre norm.</td>
+</tr>
+<tr class="odd">
+<td>device</td>
+<td>Device to be used in inference</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
