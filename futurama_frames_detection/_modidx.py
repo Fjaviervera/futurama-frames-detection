@@ -27,5 +27,17 @@ d = { 'settings': { 'audience': 'Developers',
                 'tst_flags': 'notest',
                 'user': 'Javier Vera',
                 'version': '0.0.1'},
-  'syms': { 'futurama_frames_detection.core': { 'futurama_frames_detection.core.say_hello': 'https://Javier '
-                                                                                            'Vera.github.io/futurama_frames_detection/core.html#say_hello'}}}
+  'syms': { 'futurama_frames_detection.core': { 'futurama_frames_detection.core.FuturamaDataset': 'https://Javier '
+                                                                                                  'Vera.github.io/futurama_frames_detection/core.html#futuramadataset',
+                                                'futurama_frames_detection.core.FuturamaResnet': 'https://Javier '
+                                                                                                 'Vera.github.io/futurama_frames_detection/core.html#futuramaresnet',
+                                                'futurama_frames_detection.core.FuturamaResnet.forward': 'https://Javier '
+                                                                                                         'Vera.github.io/futurama_frames_detection/core.html#futuramaresnet.forward',
+                                                'futurama_frames_detection.core.calc_results': 'https://Javier '
+                                                                                               'Vera.github.io/futurama_frames_detection/core.html#calc_results',
+                                                'futurama_frames_detection.core.create_submission': 'https://Javier '
+                                                                                                    'Vera.github.io/futurama_frames_detection/core.html#create_submission',
+                                                'futurama_frames_detection.core.criterion': 'https://Javier '
+                                                                                            'Vera.github.io/futurama_frames_detection/core.html#criterion',
+                                                'futurama_frames_detection.core.training': 'https://Javier '
+                                                                                           'Vera.github.io/futurama_frames_detection/core.html#training'}}}
